@@ -1,0 +1,275 @@
+:root {
+  --body-bg-color: #fafafa;
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 95.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  font-family: 'PT Serif', sans-serif;
+  background-color: var(--body-bg-color);
+  height: 100%;
+  color: var(--black);
+}
+
+/* Desktop */
+.container {
+  width: 100%;
+  max-width: 58.25rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.team {
+  margin-top: 6.875rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 13.437rem;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+}
+
+.description h2 {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.description p {
+  margin-top: 0.625rem;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 27px;
+}
+
+main {
+  margin-top: 6rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 264px);
+  gap: 3.5rem;
+  margin-bottom: 9rem;
+}
+
+.photo:nth-child(2) {
+  margin-top: 6.187rem;
+}
+
+.photo:nth-child(5) {
+  margin-top: 6rem;
+}
+
+.photo {
+  position: relative;
+}
+
+.photo img {
+  width: 100%;
+  max-width: 14.875rem;
+  max-height: 21.312rem;
+  margin: 0 auto;
+}
+
+.photo .occupation {
+  position: absolute;
+  right: -2.375rem;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--black);
+
+  transform: rotate(90deg);
+}
+
+.occupation.photo-1 {
+  top: 2.6rem;
+}
+
+.occupation.photo-2 {
+  top: 2.2rem;
+  right: -1.993rem;
+}
+
+.occupation.photo-3 {
+  top: 1.5rem;
+  right: -1.375rem;
+}
+
+.occupation.photo-4 {
+  top: 1.9rem;
+  right: -1.75rem;
+}
+
+.occupation.photo-5 {
+  top: 1.6rem;
+  right: -1.375rem;
+}
+
+.occupation.photo-6 {
+  top: 1.9rem;
+  right: -1.625rem;
+}
+
+.name {
+  margin-top: 0.937rem;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 27px;
+  color: var(--black);
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-bottom: 1.5rem;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 17px;
+  color: #bdbdbd;
+  text-align: center;
+}
+
+/* Mobile Large */
+@media (max-width: 425px) {
+  .container {
+    width: 100%;
+    max-width: 26.562rem;
+    margin: 0 auto;
+    padding: 0 1.125rem;
+  }
+
+  .team {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.375rem;
+    margin-top: 4.437em;
+  }
+
+  .description p {
+    font-size: 0.875rem;
+    line-height: 21px;
+  }
+
+  main {
+    margin-top: 2.375rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 138.72px);
+    grid-template-rows: repeat(2, 261.4px);
+    gap: 1.425rem;
+    margin-bottom: 8.183rem;
+  }
+
+  .photo:nth-child(2) {
+    margin-top: 3.075rem;
+  }
+
+  .photo:nth-child(4) {
+    margin-top: 3.324rem;
+  }
+
+  .photo:nth-child(5) {
+    margin-top: 0;
+  }
+
+  .photo:nth-child(6) {
+    margin-top: 3.6rem;
+  }
+
+  .photo img {
+    width: 100%;
+    max-width: 8.67rem;
+    max-height: 13.06rem;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .photo .occupation {
+    position: absolute;
+    right: -1.75rem;
+    display: inline-block;
+    font-size: 0.625rem;
+    line-height: 13px;
+  }
+
+  .occupation.photo-1 {
+    top: 2.212rem;
+  }
+
+  .occupation.photo-2 {
+    top: 1.637rem;
+    right: -1.437rem;
+  }
+
+  .occupation.photo-3 {
+    top: 1.262rem;
+    right: -0.937rem;
+  }
+
+  .occupation.photo-4 {
+    top: 1.45rem;
+    right: -1.125rem;
+  }
+
+  .occupation.photo-5 {
+    top: 1.262rem;
+    right: -0.937rem;
+  }
+
+  .occupation.photo-6 {
+    top: 1.45rem;
+    right: -1.125rem;
+  }
+
+  .name {
+    margin-top: 0.625rem;
+    font-size: 0.875rem;
+    line-height: 21px;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 320px) {
+  .container {
+    max-width: 20rem;
+  }
+
+  main {
+    grid-template-columns: 138.72px;
+    gap: 0;
+    justify-content: center;
+  }
+
+  .photo:nth-child(n) {
+    margin-top: 0;
+  }
+}
